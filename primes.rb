@@ -4,11 +4,11 @@ def primes(n)
     puts 0
   else
     (2...n).each do |num|
-      split_primes << num if is_prime?(num)
+      split_primes << num if is_prime?(num) #calling is_prime method to check if a number is prime
     end
   end
   # print split_primes
-  product_primes(split_primes, n)
+  product_primes(split_primes, n) #passing all the values to find the product of primes
 end
 
 def product_primes(arr, n)
